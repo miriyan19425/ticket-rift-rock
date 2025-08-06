@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import TicketForm from "./components/TicketForm";
 import TicketPreview from "./components/TicketPreview";
+import TicketBuying from "./components/TicketBuying";
 
 function App() {
     const [purchaseTicketsData, setPurchaseTicketsData] = useState({});
@@ -13,10 +14,7 @@ function App() {
                 <TicketForm buyTickets={getTicketPurchase}/>
                 <div className="bottom-content">
                     <TicketPreview ticketPurchase={purchaseTicketsData}/>
-                    <div className="purchased bot">
-                        <ul id="ticket-purchase">
-                        </ul>
-                    </div>
+                    <TicketBuying />
                 </div>
             </div>
    );
