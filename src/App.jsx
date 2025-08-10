@@ -4,7 +4,7 @@ import TicketPreview from "./components/TicketPreview";
 import TicketBuying from "./components/TicketBuying";
 
 function App() {
-    const [purchaseTicketsData, setPurchaseTicketsData] = useState({});
+    const [purchaseTicketsData, setPurchaseTicketsData] = useState({numTickets: '', preference: 'Seating Preference', fullName:'', email: '', phoneNumber: ''});
 
     function getTicketPurchase( d ) { setPurchaseTicketsData(d); }
 
