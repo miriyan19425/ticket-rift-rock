@@ -9,7 +9,7 @@ function TicketForm({buyTickets}){
     function handleSubmit(e){
         e.preventDefault();
 
-        if (!numTickets || !fullName || !email || !phoneNumber) return;
+        if (!numTickets || preference === 'Seating Preference' || !fullName || !email || !phoneNumber) return;
 
         const data = {numTickets, fullName, email, phoneNumber};
         
