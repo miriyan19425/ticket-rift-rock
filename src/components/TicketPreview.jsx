@@ -5,6 +5,7 @@ function TicketPreview({ticketPurchase}){
                 <ul id="ticket-preview">
                     {(  
                         ticketPurchase.numTickets === '' && 
+                        ticketPurchase.preference === 'Seating Preference' &&
                         ticketPurchase.fullName === '' &&
                         ticketPurchase.email === '' &&
                         ticketPurchase.phoneNumber === ''
