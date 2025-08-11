@@ -15,6 +15,7 @@ function TicketForm({buyTickets}){
         
         buyTickets(data);
         setNumTickets('');
+        setPreference('Seating Preference');
         setFullName('');
         setEmail('');
         setPhoneNumber('');
