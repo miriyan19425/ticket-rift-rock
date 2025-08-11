@@ -1,5 +1,7 @@
 import {useState} from 'react';
 
+const seatingOptions = ["Seating Preference", "General Admission", "VIP"];
+
 function TicketForm({buyTickets}){
     const [numTickets, setNumTickets] = useState('');
     const [fullName, setFullName] = useState('');
