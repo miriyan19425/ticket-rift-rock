@@ -4,6 +4,7 @@ const seatingOptions = ["Seating Preference", "General Admission", "VIP"];
 
 function TicketForm({buyTickets}){
     const [numTickets, setNumTickets] = useState('');
+    const [preference, setPreference] = useState('Seating Preference');
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
