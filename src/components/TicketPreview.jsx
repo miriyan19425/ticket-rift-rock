@@ -13,6 +13,7 @@ function TicketPreview({ticketPurchase}){
                     <li className="ticket-purchase">
                         <article>
                             <p>Count: {ticketPurchase.numTickets}</p>
+                            <p>Preference: {ticketPurchase.preference}</p>
                             <p>To: {ticketPurchase.fullName}</p>
                             <p>Email: {ticketPurchase.email}</p>
                             <p>Phone Number: {ticketPurchase.phoneNumber}</p>
