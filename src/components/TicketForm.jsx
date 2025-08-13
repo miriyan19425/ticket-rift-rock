@@ -14,7 +14,7 @@ function TicketForm({buyTickets}){
 
         if (!numTickets || preference === 'Seating Preference' || !fullName || !email || !phoneNumber) return;
 
-        const data = {numTickets, fullName, email, phoneNumber};
+        const data = {numTickets, preference, fullName, email, phoneNumber};
         
         buyTickets(data);
         setNumTickets('');
