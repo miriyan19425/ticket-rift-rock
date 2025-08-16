@@ -3,7 +3,7 @@ import {useState} from 'react';
 const seatingOptions = ["Seating Preference", "General Admission", "VIP"];
 
 function TicketForm({buyTickets}){
-    const [numTickets, setNumTickets] = useState('');
+    const [numTickets, setNumTickets] = useState(0);
     const [preference, setPreference] = useState('Seating Preference');
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
@@ -17,7 +17,7 @@ function TicketForm({buyTickets}){
         const data = {numTickets, preference, fullName, email, phoneNumber};
         
         buyTickets(data);
-        setNumTickets('');
+        setNumTickets(0);
         setPreference('Seating Preference');
         setFullName('');
         setEmail('');
