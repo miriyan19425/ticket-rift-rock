@@ -4,7 +4,7 @@ function TicketPreview({ticketPurchase}){
         <div className="preview bot">
                 <ul id="ticket-preview">
                     {(  
-                        ticketPurchase.numTickets === '' && 
+                        ticketPurchase.numTickets === 0 && 
                         ticketPurchase.preference === 'Seating Preference' &&
                         ticketPurchase.fullName === '' &&
                         ticketPurchase.email === '' &&
