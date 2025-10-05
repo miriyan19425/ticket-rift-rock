@@ -2,7 +2,7 @@ function TicketPreview({ticketPurchase}){
      
     return (
         <div className="preview bot">
-                <ul id="ticket-preview">
+                
                     {(  
                         ticketPurchase.numTickets === 0 && 
                         ticketPurchase.preference === 'Seating Preference' &&
@@ -10,6 +10,7 @@ function TicketPreview({ticketPurchase}){
                         ticketPurchase.email === '' &&
                         ticketPurchase.phoneNumber === ''
                      ) ||
+                         <ul id="ticket-preview">
                     <li className="ticket-purchase">
                         <article>
                             <p>Count: {ticketPurchase.numTickets}</p>
@@ -23,8 +24,9 @@ function TicketPreview({ticketPurchase}){
                             <button className="next-btn">Next</button>
                         </div>
                     </li>
+                    </ul>
                     }
-                </ul>
+                
         </div>
     );
 }
