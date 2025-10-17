@@ -29,6 +29,9 @@ function TicketForm({buyTickets}){
                     <div className="form-container">
                         <form className="ticket-form" onSubmit={handleSubmit} >
                             <input type="number" placeholder="Number of Tickets"    value={numTickets}  onChange={(e) => setNumTickets(e.target.value)} />
+                            <select value={preference} onChange={(e) => setPreference(e.target.value)} >
+                            
+                            </select>
                             <input type="text"   placeholder="Full Name"            value={fullName}    onChange={(e) => setFullName(e.target.value)} />
                             <input type="email"  placeholder="Email"                value={email}       onChange={(e) => setEmail(e.target.value)} />
                             <input type="tel"    placeholder="Phone Number"         value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
