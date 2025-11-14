@@ -18,7 +18,7 @@ function TicketPreview({ticketPurchase}){
                                    <p>Phone Number: {ticketPurchase.phoneNumber}</p>
                               </article>
                               <div className="btn-container">
-                                   <button className="edit-btn">Edit</button>
+                                   <button className="edit-btn" onClick={onEdit}>Edit</button>
                                    <button className="next-btn">Next</button>
                               </div>
                          </li>
