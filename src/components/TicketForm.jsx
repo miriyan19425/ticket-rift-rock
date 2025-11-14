@@ -9,6 +9,8 @@ function TicketForm({buyTickets}){
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
 
+    useEffect();
+
     function handleSubmit(e){
         e.preventDefault();
 
