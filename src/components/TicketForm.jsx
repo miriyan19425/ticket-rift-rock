@@ -2,14 +2,14 @@ import {useState, useEffect} from 'react';
 
 const seatingOptions = ["Seating Preference", "General Admission", "VIP"];
 
-function TicketForm({buyTickets}){
+function TicketForm({buyTickets, ticketsEdit}){
     const [numTickets, setNumTickets] = useState(0);
     const [preference, setPreference] = useState('Seating Preference');
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
 
-    useEffect();
+    useEffect(() => {}, [ticketsEdit]);
 
     function handleSubmit(e){
         e.preventDefault();
